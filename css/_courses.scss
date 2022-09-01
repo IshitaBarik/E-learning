@@ -1,0 +1,124 @@
+.course{
+  margin-top: 100px;
+  text-align: center;
+  overflow: hidden;
+  h1{
+    font-size: 2.5rem;
+    color:$mycol3;
+    margin: 0px;
+  }
+  p{
+    font-size: 0.9rem;
+    margin-bottom: 50px;
+  }
+  .image{
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+  }
+  .CourseComputer{
+    cursor: pointer;
+    .carousel-text{
+        h2{
+            font-size: 1.3rem;
+            font-weight: 300;
+            margin: 12px 0px 8px;
+            color:$mycol2;
+        }
+        p{
+            font-size: 0.96rem;
+        }
+    }
+    .owl-prev , .owl-next{
+        position: absolute;
+        width:100px;
+        height: 100px;
+        top:70px;
+        font-size: 35px !important;
+        font-weight: 100!important;
+    }
+    .fa-angle-left , .fa-angle-right{
+        background-color: $mycol2;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        padding-top: 10px;
+        color:$mycol;
+    }
+    .fa-angle-left {
+        padding-right: 5px;
+    }
+    .fa-angle-right {
+        padding-left: 5px;
+    }
+    .owl-prev{
+        right: 100%!important;
+    }
+    .owl-next{
+        left: 100%!important;
+    }
+    .image img{
+        transition: .3s ease-in-out;
+    }
+    .image:hover img{
+        transform: scale(1.1);
+    }
+  }
+}
+@media only screen and (max-width:1332px){
+    .course .CourseComputer .carousel-text p {
+        font-size: 0.9rem;
+    }
+    .course .CourseComputer .carousel-text h2 {
+        font-size: 1.5rem;
+    }
+    .course .CourseComputer .owl-prev, .course .CourseComputer .owl-next {
+        position: unset;
+    }
+}
+@media only screen and (max-width:991px){
+    .CourseComputer .image{
+        padding: 0px 80px;
+    }
+    .course .CourseComputer .carousel-text h2 {
+        font-size: 1.9rem;
+    }
+    .course .CourseComputer .carousel-text p {
+        font-size: 1rem;
+        padding: 0px 80px;
+    }
+}
+@media only screen and (max-width:425px){
+    .course h1 {
+        font-size: 2rem;
+    }
+    .course p {
+        font-size: 0.80rem;
+        padding: 0px 40px;
+    }
+    .CourseComputer .image {
+        padding: 0px 40px;
+    }
+    .course .CourseComputer .carousel-text h2 {
+        font-size: 1.2rem;
+    }
+    .course .CourseComputer .carousel-text p {
+        font-size: 0.8rem;
+        padding: 0px 20px;
+    }
+    .course {
+        margin-top: 50px;
+    }
+    .course .CourseComputer .fa-angle-left, .course .CourseComputer .fa-angle-right {
+        width: 45px;
+        font-size: 2rem;
+        height: 45px;
+        padding-top: 5px;
+    }
+
+}

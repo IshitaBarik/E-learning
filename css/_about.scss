@@ -1,0 +1,121 @@
+.wrapper{
+    background-color: $mycol;
+    padding-top: 90px;
+    .about{
+        background-color: $mycol2;
+        padding: 70px 0;
+        .inner{
+            @include flex_properties();
+            .box-1{
+                width:50%;
+                color:$mycol;
+                position: relative;
+                h1{
+                    font-size: 2.6rem;
+                    font-weight: 500;
+                }
+                .border{
+                    border-bottom: 10px solid $mycol;
+                    width:15%;
+                    position: absolute;
+                    border-radius: 6px;
+                    top:84px;
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 0.94rem;
+                    padding-right: 45px;
+                    margin: 50px 0;
+                }
+                .button2{
+                    @include btn();
+                    background-color: $mycol;
+                    color:$mycol3;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    transition: .5s;
+                    transition-timing-function: ease;
+                }
+                .button2:hover{
+                    background-color:transparent;
+                    border:1px solid  $mycol;
+                    color:$mycol;
+                    transform: skew(-10deg);
+                }
+            }
+            .box-2{
+                width: 46%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:991px){
+    .wrapper .about .inner {
+        flex-direction: column;
+    }
+    .wrapper .about .inner .box-1 ,  .wrapper .about .inner .box-2{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .wrapper .about .inner .box-1 .border {
+        border-bottom: 8px solid #fff;
+        width: 17%;
+        top: 65px;
+    }
+    .wrapper .about .inner .box-1{
+        padding-left: 30px;
+    }
+    .wrapper .about .inner .box-1 h1 {
+        font-size: 2rem;
+    }
+    .wrapper .about .inner .box-1 p {
+        font-size: 0.9rem;
+        line-height: 25px;
+        margin: 30px 0;
+    }
+    .wrapper .about .inner .box-1 .button2 {
+        width: 150px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    .wrapper .about .inner .box-2{
+        padding: 0px 30px;
+    }
+    .wrapper .about {
+        padding: 20px 0;
+    }
+}
+@media only screen and (max-width: 425px){
+    .wrapper .about .inner .box-1 h1 {
+        font-size: 1.7rem;
+    }
+    .wrapper .about .inner .box-1 p {
+        font-size: 0.8rem;
+    }
+    .wrapper .about .inner .box-1 .button2 {
+        width: 120px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 425px){
+    .wrapper .about .inner .box-1 h1 {
+        font-size: 1.5rem;
+    }
+    .wrapper .about .inner .box-1 .border {
+        border-bottom: 6px solid #fff;
+        width: 15%;
+        top: 50px;
+    }
+    .wrapper .about .inner .box-1 p {
+        font-size: 0.7rem;
+    }
+    .wrapper .about .inner .box-1 .button2 {
+        width: 100px;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+}

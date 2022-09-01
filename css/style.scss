@@ -1,0 +1,46 @@
+$font:'Poppins', sans-serif;
+$mycol:#fff;
+$mycol2:#fb6818;
+$mycol3:#252525;
+$mycol4:#cbc9c9;
+@mixin btn{
+    width:180px;
+    height:50px;
+    background-color: #fb6818;
+    color:#fff;
+    border: none;
+    font-family:$font;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+@mixin flex_properties{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex-box{
+    @include flex_properties();
+}
+.inner{
+    max-width: 1200px;
+    width:100%;
+    padding: 1%;
+    margin:0 auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+*{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+@import "home";
+@import "nav";
+@import "about";
+@import "courses";
+@import "blog";
+@import "contact";
+@import "footer";

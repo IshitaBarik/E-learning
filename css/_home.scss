@@ -1,0 +1,97 @@
+.banner{
+    width:100%;
+    min-height:71vh;
+    background-image:url(../img/banner-img.png);
+    background-size:cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    .inner{
+        position: relative;
+        .owl-carousel, .owl-carousel.owl-loaded {
+            display: block;
+            cursor: pointer;
+        }
+        .items{
+            h1{
+                font-size: 2.3rem;
+                font-weight: 400;
+                margin-top: 70px;
+            }
+            p{
+                padding-right: 550px;
+            }
+            .button{
+                @include btn();
+                font-size: 1.1rem;
+                transition: .5s;
+                transition-timing-function: linear;
+            }
+            .button:hover{
+                background-color: transparent;
+                border: 1px solid $mycol2;
+                color:$mycol2;
+                transform: skew(-10deg);
+                     
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .banner .inner .items h1 {
+        font-size: 2.2rem;
+    }
+}
+@media only screen and (max-width:991px){
+    .banner .inner .items h1 {
+        font-size: 2rem;
+    }
+    .banner .inner .items .button {
+        width: 150px;
+        height: 45px;
+    }
+    .banner .inner .items p {
+        padding-right: 70px;
+    }
+}
+@media only screen and (max-width: 494px){
+    .banner .inner .items h1 {
+        font-size: 1.4rem;
+    }
+    .banner .inner .items p {
+        padding-right: 20px;
+        font-size: 0.9rem;
+    }
+    .banner .inner .items .button {
+        width: 130px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width:375px){
+    .banner .inner .items h1 {
+        font-size: 1.3rem;
+    }
+    .banner .inner .items p {
+        font-size: 0.8rem;
+    }
+    .banner .inner .items .button {
+        width: 120px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 375px){
+    .banner .inner .items h1 {
+        font-size: 1.2rem;
+    }
+    .banner .inner .items p {
+        font-size: 0.75rem;
+        padding-right: 5px;
+    }
+}

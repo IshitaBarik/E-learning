@@ -1,0 +1,77 @@
+.LastSession{
+    padding: 20px 0;
+    cursor: pointer;
+    background-color: $mycol3;
+    a{
+        text-decoration: none;
+        color: $mycol4;
+        font-size: 0.8rem;
+    }
+    .my{
+        width:20%;
+        span{
+            font-size: 0.8rem;
+            margin-left: 6px;
+        }
+        h4{
+            color:$mycol;
+            font-size: 1.5rem;
+        }
+        p{
+            color: #cbc9c9;
+            font-size: 0.9rem;
+        }
+        li{
+            list-style: none;
+            color:$mycol4;
+            font-size: 0.9rem;
+        }
+    }
+    .para{
+        text-align: center;
+        color: $mycol4;
+    }
+}
+@media only screen and (max-width:991px){
+    .Contact .flex-box{
+        flex-direction: column;
+    }
+    .LastSession .my {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:425px){
+    .LastSession .my h4 {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    .LastSession .my p {
+        font-size: 0.8rem;
+    }
+    .LastSession .para p{
+        font-size: 0.8rem;
+        padding: 20px 0px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .LastSession .my h4 {
+        color: #fff;
+        font-size: 1.1rem;
+    }
+    .LastSession .my p {
+        font-size: 0.7rem;
+    }
+    .fa{
+        font-size: 0.8rem;
+    }
+    .LastSession a {
+        font-size: 0.7rem;
+    }
+    .LastSession .my span {
+        font-size: 0.7rem;
+    }
+    .LastSession .para p {
+        font-size: 0.7rem;
+    }
+
+}
